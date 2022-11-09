@@ -8,6 +8,7 @@ RUN GO111MODULE=on CGO_ENABLED=1 GOOS=linux go build -ldflags="-extldflags=-stat
 
 FROM debian:buster-slim
 
+EXPOSE 8083
 
 COPY --from=builder /app ./
 
