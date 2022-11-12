@@ -14,7 +14,7 @@ func main() {
 	proxy, err := natsproxy.NewNatsProxy(proxyConn)
 	fmt.Println(err)
 	defer proxyConn.Close()
-	err = http.ListenAndServe("localhost:8083", proxy)
+	err = http.ListenAndServe("0.0.0.0:8083", proxy)
 	if err != nil {
 		fmt.Println(err)
 		return
