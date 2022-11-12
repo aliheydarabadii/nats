@@ -6,7 +6,7 @@ import (
 	"os"
 
 	natsproxy "github.com/aliheydarabadii/nats-proxy"
-	"github.com/nats-io/nats"
+	"github.com/nats-io/nats.go"
 )
 
 func main() {
